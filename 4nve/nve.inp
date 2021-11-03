@@ -1,0 +1,40 @@
+NVE simulation
+&cntrl
+    imin = 0,
+    irest = 1,
+    ntx = 5,
+    ioutfm = 1,
+    ntwr = 50000,
+    ntpr = 500, 
+    ntwx = 5,   
+    ntwv = 1,   
+    ntwe = 0,   
+    iwrap = 1,  
+
+    dt = 0.002, 
+    nstlim = 50000,
+    nscm = 500,
+    ntt = 0,
+
+    ntb = 1,
+    cut = 9.0,
+
+    igb = 0,
+    rgbmax = 999,
+
+    ibelly = 0, 
+    bellymask = '', 
+
+    ntr = 0,
+    ntrx = 1,
+
+    ntc = 2,
+    ntf = 2,
+
+    tol = 0.0000001,
+
+/
+
+&ewald
+    dsum_tol = 0.0000001,
+/

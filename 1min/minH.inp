@@ -1,0 +1,25 @@
+minimizing simulation of system
+&cntrl
+    imin = 1,
+    irest = 0,
+    ntx = 1,
+    ntpr = 100,
+    ntmin = 1,
+    maxcyc = 1000,
+    ncyc = 200,
+    dx0 = 0.01
+    drms = 1.0E-4
+    ntb = 1,
+    cut = 9.0,
+    ibelly = 0,
+    bellymask = '',
+    ntr = 1,
+    ntrx = 1,
+    restraintmask = '!@H=',
+    restraint_wt = 99.9,
+    ntc = 1,
+    ntf = 1,
+    igb = 0,
+    rgbmax = 999,
+/
+

@@ -1,0 +1,39 @@
+heating simulation of system 0 to 300K [Equilibration]
+&cntrl
+    imin = 0,
+    irest = 0,
+    ntx = 1,
+    nmropt = 1,
+
+    ioutfm = 1,
+    ntpr = 500,
+    ntwx = 500,
+    ntwv =   0,
+    ntwe =   0,
+    iwrap = 1,
+
+    dt = 0.002,
+    nstlim = 50000,
+    nscm = 500,
+
+    ntt = 1,
+    tempi = 0.0,
+    temp0 = 300.0,
+    ig = -1,
+    tautp = 1.0,
+    ntb = 1,
+    cut = 9.0,
+    igb = 0,
+    rgbmax = 999,
+    ibelly = 0,
+    bellymask = '',
+    ntr = 1,
+    ntrx = 1,
+    restraintmask = '@C,O,N,CA & !:WAT',
+    restraint_wt = 2.0,
+    ntc = 2,
+    ntf = 2,
+/
+&wt TYPE='TEMP0', istep1=0, istep2=25000,
+    value1=0.1, value2=300.0, /
+&wt TYPE='END' /

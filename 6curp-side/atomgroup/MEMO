@@ -1,0 +1,16 @@
+
+1. extract atominfo from parmtop file using cpptraj.
+   $ cpptraj -i atominfo > atominfo.dat
+
+2. modify atominfo.dat (remove except atom information line).
+
+   ## EXAMPLE ##
+   #Atom Name  #Res Name  #Mol Type   Charge     Mass GBradius El				
+       1 HH31     1 ACE      1 HC     0.1123   1.0080   1.3000  H
+       	 ...
+    1673 O2D    105 HEM      1 O2    -0.8091  16.0000   1.5000  O	
+   ## EXAMPLE ##
+
+3. make atom group file.
+   ./atomgroup.py atominfo 1 104 105 > atomgroup.dat
+   (resid 1=ACE, 104=NME, 105=HEM are not separated.)
